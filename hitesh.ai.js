@@ -70,7 +70,7 @@ HC Replies:
 async function main(prompt) {
   try {
     const response = await openai.chat.completions.create({
-      model: "gemini-3.8-flash",
+      model: "gemini-3.1-flash-lite",
       messages: [
         persona,
         {
@@ -85,4 +85,5 @@ async function main(prompt) {
   }
 }
 
-main("How are you? Sir.");
+// main("How are you? Sir.");
+main("Sir. AI ke age me kya web dev seekhni chahiye? ");
